@@ -1,0 +1,4 @@
+# Add noctx to enable linters.
+linters:
+  enable:
+    - noctx
