@@ -26,7 +26,7 @@ func checkVersions(releasedVersion, localVersion string) {
 			name,
 			localVersion,
 			releasedVersion,
-			"https://dl.google.com/go/$(curl https://golang.org/VERSION?m=text).linux-amd64.tar.gz",
+			"https://dl.google.com/go/$(curl -L https://golang.org/VERSION?m=text).linux-amd64.tar.gz",
 		)
 	} else {
 		fmt.Printf("%10s: latest releasedVersion %s installed\n", name, localVersion)
